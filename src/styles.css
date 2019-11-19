@@ -1,0 +1,329 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Varela Round", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 320px;
+  height: 700px;
+  border: 3px solid #bcbcbc;
+  border-radius: 30px;
+  background-color: #edf0f6;
+  overflow-y: auto;
+  position: relative;
+}
+
+.header {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.header__column {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  width: 80px;
+  height: auto;
+}
+
+.header__icon {
+  width: 25px;
+  height: auto;
+}
+.header__icon:first-child {
+  margin-right: 10px;
+}
+
+.header__icon img {
+  width: 100%;
+}
+
+.users {
+  width: 100%;
+  overflow: hidden;
+}
+
+.users__list {
+  display: flex;
+  width: 100%;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.users__list-item {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin: 0 10px;
+  flex: 0 0 auto;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.plus-icon {
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #000;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 100;
+  border: 1px solid #fff;
+  font-size: 10px;
+}
+
+.users__list-item:nth-child(1) {
+  background-image: url(https://user-images.githubusercontent.com/25483027/68145177-8f7cf400-ff78-11e9-8af8-eb9853cae1d6.png);
+}
+.users__list-item:nth-child(2) {
+  background-image: url(https://user-images.githubusercontent.com/25483027/68145233-b63b2a80-ff78-11e9-8788-71ea4d9aaf7f.png);
+}
+.users__list-item:nth-child(3) {
+  background-image: url(https://user-images.githubusercontent.com/25483027/68145361-f7333f00-ff78-11e9-8638-911c9efcd766.png);
+}
+.users__list-item:nth-child(4) {
+  background-image: url(https://user-images.githubusercontent.com/25483027/68145394-087c4b80-ff79-11e9-9198-672339cbf6dd.png);
+}
+.users__list-item:nth-child(5) {
+  background-image: url(https://user-images.githubusercontent.com/25483027/68145434-1e8a0c00-ff79-11e9-993f-2881855ccccc.png);
+}
+
+.post {
+  margin: 0 auto;
+  margin-top: 10px;
+  background-color: #fff;
+  width: 96%;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.post__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post__header-column:first-child {
+  display: flex;
+  align-items: center;
+}
+
+.post__header-arrow {
+  width: 20px;
+  margin-right: 20px;
+}
+
+.post__user-profile {
+  background: url(https://user-images.githubusercontent.com/25483027/68146230-e1bf1480-ff7a-11e9-85ac-8a5e1ee96908.png)
+    no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.post__user-account {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 5px;
+}
+
+.post__user {
+  font-size: 12px;
+  font-weight: bold;
+}
+.post__time {
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0.4);
+}
+.post__image {
+  width: 100%;
+  height: 280px;
+  margin: 10px auto;
+  border-radius: 20px;
+  background: url(https://user-images.githubusercontent.com/25483027/68145744-cef81000-ff79-11e9-9c1b-f0b92589c1d7.png)
+    no-repeat;
+  background-size: cover;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.post__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post__footer-column {
+  display: flex;
+  align-items: center;
+}
+
+.post__footer-icon:not(:last-child) {
+  width: 17px;
+  margin-right: 5px;
+}
+
+.comment-icon {
+  margin-left: 20px;
+}
+
+.post__footer-number {
+  font-size: 10px;
+}
+
+.footer {
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: -10px -10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__list-icon {
+  width: 15px;
+}
+
+.footer__list-plus {
+  font-size: 25px;
+  background-color: #1bb66f;
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 30px;
+}
+
+.post__comment-item {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.post__comment-item:nth-child(1) .post__comment-profile {
+  background-image: url(https://user-images.githubusercontent.com/25483027/68145233-b63b2a80-ff78-11e9-8788-71ea4d9aaf7f.png);
+}
+.post__comment-item:nth-child(2) .post__comment-profile {
+  background-image: url(https://user-images.githubusercontent.com/25483027/68145361-f7333f00-ff78-11e9-8638-911c9efcd766.png);
+}
+.post__comment-item:nth-child(3) .post__comment-profile {
+  background-image: url(https://user-images.githubusercontent.com/25483027/68145394-087c4b80-ff79-11e9-9198-672339cbf6dd.png);
+}
+.post__comment-item:nth-child(4) .post__comment-profile {
+  background-image: url(https://user-images.githubusercontent.com/25483027/68145434-1e8a0c00-ff79-11e9-993f-2881855ccccc.png);
+}
+
+.post__comment-profile {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.post__comment-column:last-child {
+  display: flex;
+  flex-direction: column;
+}
+.post__comment-user {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.post__comment-text {
+  font-size: 11px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.post__comment-icons i {
+  font-size: 10px;
+  margin-right: 10px;
+  color: rgba(0, 0, 0, 0.4);
+}
+.post__comment-icons i:last-child {
+  transform: rotateY(180deg);
+}
+
+.comment-footer {
+  padding: 10px;
+}
+
+.footer__comment-list {
+  width: 100%;
+  border-radius: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 5px;
+}
+
+.footer__comment-list .footer__list-item:nth-child(2) {
+  flex: 1;
+}
+
+.footer__list-profile {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: url(https://user-images.githubusercontent.com/25483027/68145177-8f7cf400-ff78-11e9-8af8-eb9853cae1d6.png)
+    no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.footer__list-input {
+  all: unset;
+  font-size: 12px;
+  padding-left: 5px;
+}
+
+.foote__send-btn {
+  padding: 5px 15px;
+  background-color: #1bb66f;
+  color: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
