@@ -1,9 +1,5 @@
-.big__bookmark{
-color:yellow;
-}
-
-.fa-bookmark{
-    color:yellow;
-background-color:red;
-font-size:50px;
+@import "reset.css";
+@import "reset.css";
+body{
+    all:unset;
 }
