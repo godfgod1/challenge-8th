@@ -3,3 +3,60 @@
 body{
     all:unset;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    height: 110%;
+  }
+  
+  body {
+    font-family: "Varela Round", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }  
+  
+img{
+    width:100px;
+    height:auto;
+}
+.screen{
+    width:365px;
+    height:850px;
+    border:5px solid #E4E7ED;
+    background-color:#EDF0F6;
+    border-radius:50px;
+    padding: 20px;
+}
+
+
+.header__top
+{
+    display:flex;
+    justify-content: space-between;
+    background-color:none;
+}
+
+.instagram-logo{
+    width:100px;
+}
+
+.fa-tv{
+    margin-right:10px;
+}
+.fa-paper-plane{
+    margin-right:20px;s
+}
+
+.header_footer-img{
+    display:flex;
+    justify-content:space-between;
+    background-color:none;
+    overflow: hidden;
+}
